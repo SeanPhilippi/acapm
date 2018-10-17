@@ -5,7 +5,7 @@
 // readline x5, take in data for a package.json file
 // store inputs for readline prompts into object called jsonObject
 // make Object's key values the inputs from the user
-// create package.jsonand save this Object in file
+// create package.json and save this Object in file
 // else end program
 
 'use strict';
@@ -24,7 +24,6 @@ const rl = readline.createInterface({
 const firstArg = process.argv[2];
 // fs = file system.  fs is a node module for accessing physical file system
 const fs = require('fs');
-
 
 if (firstArg === 'init') {
    if (fs.existsSync('./package.json')) {
